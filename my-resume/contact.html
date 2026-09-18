@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อ | ศรายุธ เภรีทัศน์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">MY RESUME</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดปิดเมนู" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="experience.html">ประสบการณ์</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html" class="active">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card-section">
+      <div class="section-head">
+        <p class="section-num">CONTACT</p>
+        <h1 class="section-title">ติดต่อฉัน</h1>
+        <p class="section-desc">ยินดีรับฟังทุกข้อเสนอแนะและโอกาสในการร่วมงาน</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>ช่องทางติดต่อ</h3>
+          <h4 style="margin-top: 14px; font-size: 1rem;">ศรายุธ เภรีทัศน์</h4>
+          <ul class="contact-list">
+            <li>
+              <span class="label">GitHub:</span>
+              <span>xxxx</span>
+            </li>
+            <li>
+              <span class="label">อีเมล:</span>
+              <span>xxxx</span>
+            </li>
+            <li>
+              <span class="label">สังกัด:</span>
+              <span>วิศวกรรมไฟฟ้า มหาวิทยาลัยศิลปากร</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h3>ส่งข้อความถึงฉัน</h3>
+          <form class="contact-form" action="#" method="POST"
+            onsubmit="event.preventDefault(); alert('ส่งข้อความเรียบร้อยแล้ว');">
+            <div class="field">
+              <label for="name">ชื่อของคุณ</label>
+              <input type="text" id="name" name="name" required placeholder="กรอกชื่อ-นามสกุล">
+            </div>
+            <div class="field">
+              <label for="email">อีเมลของคุณ</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+            <div class="field">
+              <label for="message">ข้อความ</label>
+              <textarea id="message" name="message" rows="4" required
+                placeholder="พิมพ์ข้อความที่ต้องการติดต่อ..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">ส่งข้อความ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Resume &bull; ภาควิชาวิศวกรรมไฟฟ้า มหาวิทยาลัยศิลปากร</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

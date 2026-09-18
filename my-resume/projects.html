@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงาน | ศรายุธ เภรีทัศน์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">MY RESUME</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดปิดเมนู" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="experience.html">ประสบการณ์</a></li>
+        <li><a href="projects.html" class="active">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card-section">
+      <div class="section-head">
+        <p class="section-num">SENIOR PROJECT</p>
+        <h1 class="section-title">WiFi Human Detection (WiFi Sense)</h1>
+        <p class="section-desc">โครงงานตรวจจับการมีอยู่และการเคลื่อนไหวของมนุษย์ด้วยสัญญาณ Wi-Fi โดยไม่ใช้กล้องวงจรปิด
+        </p>
+      </div>
+
+      <!-- Feature Highlight Project -->
+      <article class="single-project-container">
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="images/wifi_sense_2.jpg" alt="แผนผัง 2D แบบ Real-time ของระบบ WiFi Sense"
+              class="project-img-large">
+          </div>
+          <div class="gallery-sub">
+            <img src="images/wifi_sense_1.jpg" alt="หน้าต่าง Dashboard สถานะปัจจุบัน" class="project-img-thumb">
+            <img src="images/wifi_sense_3.jpg" alt="หน้าต่างกราฟประวัติการตรวจจับ" class="project-img-thumb">
+          </div>
+        </div>
+
+        <div class="project-detail-content">
+          <div class="detail-block">
+            <h3>ภาพรวมของโครงงาน</h3>
+            <p>
+              ระบบ <strong>WiFi Sense (WiFi Human Detection)</strong>
+              เป็นโครงงานวิศวกรรมโทรคมนาคมที่พัฒนาขึ้นเพื่อตรวจจับการปรากฏตัวและตำแหน่งของมนุษย์ภายในพื้นที่
+              โดยอาศัยการวิเคราะห์ความเปลี่ยนแปลงของข้อมูลสภาพช่องสัญญาณ (CSI: Channel State Information)
+              ของคลื่นความถี่ Wi-Fi ระหว่างตัวส่ง (TX) และตัวรับ (RX) ซึ่งคลื่นสัญญาณจะเกิดการสะท้อน กระเจิง
+              และลดทอนเมื่อมีร่างกายมนุษย์เคลื่อนไหวผ่าน
+            </p>
+            <p>
+              ข้อดีสำคัญคือการตรวจจับที่รักษาความเป็นส่วนตัวสูงสุด (Privacy-Preserving) ไม่จำเป็นต้องติดตั้งกล้องวงจรปิด
+              สามารถทำงานได้แม้ในที่มืด หรือมีสิ่งกีดขวางบางประเภท
+            </p>
+          </div>
+
+          <div class="detail-block">
+            <h3>บทบาทหน้าที่ในการพัฒนา</h3>
+            <div style="margin-top: 12px;">
+              <div class="inner-box">
+                <h4>ศรายุธ เภรีทัศน์</h4>
+                <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0;">
+                  รับผิดชอบงานด้านการคำนวณและวิเคราะห์สัญญาณ (Signal Analysis &amp; Math Modeling): การสกัดข้อมูล CSI,
+                  การคำนวณทางสถิติเพื่อกรองสัญญาณรบกวน (Noise Filtering), การคำนวณพิกัดตำแหน่ง
+                  และการวิเคราะห์ค่าความมั่นใจ (Confidence Score)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-block">
+            <h3>ฟังก์ชันการทำงานหลักของระบบ</h3>
+            <ul style="padding-left: 20px; color: var(--text);">
+              <li><strong>Dashboard แสดงสถานะปัจจุบัน:</strong> แสดงผลการตรวจจับว่ามีคนในพื้นที่หรือไม่
+                พร้อมระดับความเชื่อมั่น (Confidence) และค่า CSI ล่าสุดแบบ Real-time</li>
+              <li><strong>แผนผัง 2D แบบ Real-time:</strong> จำลองตำแหน่งสัมพัทธ์ระหว่างเสาสัญญาณตัวส่ง (TX), ตัวรับ (RX)
+                และพิกัดของผู้ตรวจพบภายในกรอบพื้นที่</li>
+              <li><strong>ประวัติการตรวจจับ (History):</strong>
+                บันทึกแนวโน้มและวิเคราะห์ค่าความมั่นใจย้อนหลังในรูปแบบกราฟอนุกรมเวลา</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h3>เทคโนโลยีและเครื่องมือที่ใช้</h3>
+            <ul class="tag-list">
+              <li>WiFi CSI Extraction</li>
+              <li>Signal Processing &amp; Filtering</li>
+              <li>Mathematical Modeling</li>
+              <li>Python (FastAPI / Flask)</li>
+              <li>WebSockets / Real-time 2D Canvas</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+
+          <div class="btn-group" style="margin-top: 16px;">
+            <a href="contact.html" class="btn btn-outline">สอบถามข้อมูลโครงงาน</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Resume &bull; ภาควิชาวิศวกรรมไฟฟ้า มหาวิทยาลัยศิลปากร</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
